@@ -6,6 +6,12 @@ kotlin {
     }
 
     sourceSets {
+        jsMain {
+            dependencies {
+                implementation("org.jetbrains.kotlin:kotlin-stdlib-js:1.7.20")
+            }
+        }
+
         jvmAndNixMain {
             dependencies {
                 api(project(":ktor-utils"))
